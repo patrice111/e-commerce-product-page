@@ -4,33 +4,97 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <!-- <img src="assets/shared/logo.svg" alt="space tourism logo" class="logo"> -->
   
   <!-- Google fonts -->
-  <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Bellefair&family=Barlow:wght@400;700&display=swap"
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Bellefair&family=Barlow:wght@400;700&display=swap"
       rel="stylesheet"> -->
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
       
   <!-- Custom CSS -->
-  <!-- <link rel="stylesheet" href="css/styles.css">
-  <link rel="stylesheet" href="css/variables.css"> -->
+  <link rel="stylesheet" href="css/styles.css">
 
   <title>E-Commerce Product Page</title>
+
+  <script src="js/navigation.js" defer></script>
+  <script src="js/lightbox.js" defer></script>
+
 </head>
 <body>
+  <header class="primary-header">
+    <button class="mobile-nav-toggle" aria-controls="primary-navigation"><span class="sr-only" aria-expanded="false">Menu</span></button>
 
-  Collections
-  Men
-  Women
-  About
-  Contact
+    <div>
+      <a href="index.html"><img src="./images/logo.svg" alt="sneaker logo" class="logo"></a>
+    </div>
+    
+    <nav>
+        <ul id="primary-navigation" data-visible="false"class="primary-navigation">
+            <li class="active"><a class="menu-item" href="index.html" aria-hidden="true">Home</a>
+            <li><a class="menu-item" href="#" aria-hidden="true">Collections</a>
+            <li><a class="menu-item" href="#" aria-hidden="true">Men</a>
+            <li><a class="menu-item" href="#" aria-hidden="true">Women</a>
+            <li><a class="menu-item" href="#" aria-hidden="true">About</a>
+            <li><a class="menu-item" href="#" aria-hidden="true">Contract</a>
+        </ul>
+    </nav>
 
-  Sneaker Company
+    <div class="checkout">
+      <a href="#"><img src="./images/icon-cart.svg" alt="cart icon" class="cart"></a>
 
-  Fall Limited Edition Sneakers
+      <a href="#"><img src="./images/image-avatar.png" alt="image avatar" class="avatar"></a>
+    </div>
+  </header>
 
-  These low-profile sneakers are your perfect casual wear companion. Featuring a 
+  <div class = "card-wrapper">
+    <div class = "card">
+      <!-- card left -->
+      <div class = "product-imgs">
+        <div class = "img-display">
+          <div class = "img-showcase">
+            <img src = "./images/image-product-1.jpg" alt = "shoe image" class="shoe-image">
+            <img src = "./images/image-product-2.jpg" alt = "shoe image" class="shoe-image">
+            <img src = "./images/image-product-3.jpg" alt = "shoe image" class="shoe-image">
+            <img src = "./images/image-product-4.jpg" alt = "shoe image" class="shoe-image">
+          </div>
+        </div>
+        <div class = "img-select">
+          <div class = "img-item">
+            <a href = "#" data-id = "1">
+              <img src = "./images/image-product-1-thumbnail.jpg" alt = "shoe image">
+            </a>
+          </div>
+          <div class = "img-item">
+            <a href = "#" data-id = "2">
+              <img src = "./images/image-product-2-thumbnail.jpg" alt = "shoe image">
+            </a>
+          </div>
+          <div class = "img-item">
+            <a href = "#" data-id = "3">
+              <img src = "./images/image-product-3-thumbnail.jpg" alt = "shoe image">
+            </a>
+          </div>
+          <div class = "img-item">
+            <a href = "#" data-id = "4">
+              <img src = "./images/image-product-4-thumbnail.jpg" alt = "shoe image">
+            </a>
+          </div>
+        </div>
+      </div>  
+    </div>
+  </div>
+
+
+
+
+
+
+<div>
+  <h1>Sneaker Company</h1>
+  <h2>Fall Limited Edition Sneakers</h2>
+  <p>These low-profile sneakers are your perfect casual wear companion. Featuring a 
   durable rubber outer sole, they’ll withstand everything the weather can offer.
 
   $125.00
@@ -38,7 +102,7 @@
   $250.00
 
   0
-  Add to cart
-
+  Add to cart</p>
+</div>
 </body>
 </html>
